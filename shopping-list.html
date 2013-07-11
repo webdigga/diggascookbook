@@ -45,10 +45,11 @@
 <div id="meal-container">	
 	<div class="meal-type">
 		<h2>Dinner</h2>
-    <a href="#" id="chicken-and-tabouleh">Chicken and tabouleh</a>		
-    <a href="#" id="pasta">Sardine Pasta</a>
+	    <a href="#" id="chicken-and-tabouleh">Chicken and tabouleh</a>		
+	    <a href="#" id="pasta">Sardine Pasta</a>
 		<a href="#" id="chilli-and-brocolli">Chilli and brocolli</a>
 		<a href="#" id="lobster-bisque">Lobster bisque</a>
+		<a href="#" id="beans-and-cottage-cheese">Beans and cottage cheese</a>
 	</div>
 </div>
 
@@ -61,12 +62,12 @@
 	
 	<h2>Dairy / Meat</h2>
 	<li class="option lobster-bisque">Seafood</li>
-  <li class="option chicken-and-tabouleh">6 Pieces of chicken</li>
-  <li class="option chilli-and-brocolli">500g organic lean beef mince</li>	
+	<li class="option chicken-and-tabouleh">6 Pieces of chicken</li>
+	<li class="option chilli-and-brocolli">500g organic lean beef mince</li>	
 	<li>Almond Milk</li>
 	<li>Butter</li>	
 	<li class="option pasta">Pasta sauce</li>
-	<li>Cottage cheese x 4</li>
+	<li>Cottage cheese x 3 <span class="option beans-and-cottage-cheese">Extra</span></li>
 	<li class="option chicken-and-tabouleh">Tabouleh</li>		
 	
 	<h2>Cupboard</h2>		
@@ -74,14 +75,13 @@
 	<li>Nuts and seeds</li>
 	<li>Salt</li>
 	<li>Pepper</li>
-	<li>Olive oil</li>
-	<li>Apple cider vinegar (lunch)</li>
+	<li>Olive oil</li>	
 	<li class="option lobster-bisque">Harissa</li>
 	<li>Wholegrain mustard</li>	
 	<li>Tea</li>
 	<li>Coffee</li>
 	<li>Cereal</li>  
-	<li>Baked beans</li>
+	<li>Baked beans <span class="option beans-and-cottage-cheese">Extra</span></li>	
 	<li class="option chilli-and-brocolli">2 tins tomatoes</li>
 	<li class="option chilli-and-brocolli">2 tins kidney beans</li>
 	<li class="option lobster-bisque">Lobster bisque soup</li>
@@ -131,6 +131,7 @@ $(document).ready(function() {
 		//alert(selectedClass);
 		// show the meal type ingredients in the list		
 		$('#items li.' + selectedClass).toggle();
+		$('#items li span.' + selectedClass).toggle();
 	});	
 });
 </script>
