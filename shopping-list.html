@@ -21,6 +21,9 @@
 			clear:left;
 			padding:5px;
 		}
+		.option {
+			display: none;
+		}
 		ul#items h2 {
 			clear:left;
 		}
@@ -94,7 +97,6 @@
 	<li class="option zoodle-beef-ragu">1 x carrot</li>
 	<li class="option steak">Courgette</li>
 	<li class="option steak">Mushrooms</li>
-	<li>Lemons</li>
 	
 	<h2>DAIRY / MEAT</h2>
 	<li class="option chicken">1 whole chicken</li>
@@ -105,15 +107,13 @@
 	<li class="option zoodle-beef-ragu">Beef mince</li>	
 	<li class="option steak">3 x steak</li>
 	<li class="option sardines-on-lettuce">Cooked turkey</li>
-	<li class="option sweet-potatoes">Cottage cheese</li>
-	<li>Almond Milk</li>
+	<li class="option sweet-potatoes">Cottage cheese</li>	
 	
 	<h2>CUPBOARD</h2>
-	<li>Small loaf of bread</li>
+	<li>Small loaf of wholegrain bread</li>
 	<li class="option salmon-salad">Mustard</li>
-	<li>Nuts and seeds</li>
-	<li>Dried fruit x 5</li>
-	<li>12 x medium eggs</li>
+	<li>Dried fruit, nuts and seeds</li>	
+	<li>6 x medium eggs</li>
 	<li>1 x tinned tomatoes</li>
 	<li class="option zoodle-beef-ragu">Passata</li>
 	<li class="option salmon-salad">6 x tins salmon</li>
@@ -146,7 +146,7 @@
 	<li>Cloth</li>
 	<li>Flash spray</li>
 	<li>Fairy liquid</li>
-	<li>Clothes washing tablets</li>
+	<li>Clothes washing powder</li>
 	<li>Conditioner</li>
 	<li>Toilet roll</li>
 	<li>Toilet cleaner</li>	
@@ -161,16 +161,17 @@
 </ul>
 
 <script>
-$(document).ready(function() {
-
-	// hide all options
-	$('.option').hide();
+$(document).ready(function() {	
+	
 	// when a meal type is clicked on...	
 	$('.meal-type a').click(function() {
+		
 		// grab the id of the meal
 		var selectedClass = $(this).attr('id');
+		
 		// add/remove a class of selected
 		$(this).toggleClass('selected');		
+		
 		//alert(selectedClass);
 		// show the meal type ingredients in the list		
 		$('#items li.' + selectedClass).toggle();
