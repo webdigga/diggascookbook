@@ -3,39 +3,45 @@
 	<title>Shopping List</title>
 	<style>
 		h1 {
-			font-size:1.2em;
+			font-size: 1.2em;
 		}
 		h2 {
-			font-size:1.1em;
+			font-size: 1.1em;
 		}
 		#meal-container {
 			overflow: hidden;
 			margin-bottom: 20px;
 		}		
 		.meal-type {
-			width:33%;
-			float:left;
+			width: 33%;
+			float: left;
 		}
 		.meal-type a {
-			display:block;			
-			clear:left;
-			padding:5px;
+			display: block;			
+			clear: left;
+			padding: 5px;
 		}
 		.option {
 			display: none;
 		}
-		ul#items h2 {
-			clear:left;
+		#items h2 {
+			clear: left;
 		}
-		ul#items {
-			padding:0;
+		#items {
+			padding: 0;
 		}
-		ul#items li {
-			list-style-type:none;
+		#items li {
+			list-style-type: none;
+			margin-bottom: 5px;
+			padding: 5px;
 		}
 		.selected {
-			background:green;
-			color:#fff;
+			background: green;
+			color: #ffffff;
+		}
+		.complete {
+			background-color: red;
+			color: #ffffff;
 		}
 	
 	</style>	
@@ -47,30 +53,26 @@
 
 <div id="meal-container">	
 	<div class="meal-type">
+		
 		<h2>DINNER</h2>
-	    <a href="#" id="chicken-and-chard">Chicken and chard</a>
-	    <a href="#" id="sweet-potatoes">Sweet potatoes</a>
-	    <a href="#" id="salmon-salad">Salmon salad</a>	    
-	    <a href="#" id="sardines-on-lettuce">Sardines on lettuce</a>
-	    <a href="#" id="slow-cooked-lamb-and-peppers">Slow cooked lamb and peppers</a>
-	    <a href="#" id="chicken-and-asparagus">Chicken and asparagus</a>
-	    <a href="#" id="chicken-pear-and-spinach">Chicken pear and spinach</a>
-	    <a href="#" id="steak">Steak</a>
-	    <a href="#" id="zoodle-beef-ragu">Zoodle beef ragu</a>
+		<a href="#" id="chicken-and-chard">Chicken and chard</a>
+		<a href="#" id="sweet-potatoes">Sweet potatoes</a>
+		<a href="#" id="salmon-salad">Salmon salad</a>	    
+		<a href="#" id="sardines-on-lettuce">Sardines on lettuce</a>
+		<a href="#" id="slow-cooked-lamb-and-peppers">Slow cooked lamb and peppers</a>
+		<a href="#" id="chicken-and-asparagus">Chicken and asparagus</a>
+		<a href="#" id="chicken-pear-and-spinach">Chicken pear and spinach</a>
+		<a href="#" id="steak">Steak</a>
+		<a href="#" id="zoodle-beef-ragu">Zoodle beef ragu</a>
 
 		<h2>LUNCH</h2>
-	    <a href="#" id="tuna">Tuna</a>
-	    <a href="#" id="chicken">Chicken</a>
-
-	    <h2>HIT LIST (non paleo)</h2>
-	    <div>Very dark chocolate</div>
-	    <div>Peanuts</div>
-	    <div>Sweet potato / vegetable crips</div>
-	    <div>Red wine</div>
+		<a href="#" id="tuna">Tuna</a>
+		<a href="#" id="chicken">Chicken</a>	    
 	</div>
 </div>
 
-<ul id="items">
+<ul id="items">	
+	
 	<h2>FRUIT / VEG</h2>
 	<li>Spinach (salad)</li>
 	<li class="option salmon-salad">Salad</li>
@@ -137,7 +139,8 @@
 
 	<h2>HOUSEHOLD</h2>
 	<li>B vitamins</li>
-	<li>Vitamin d</li>	
+	<li>Vitamin d</li>
+	<li>Cod liver oil</li>	
 	<li>Tin foil</li>
 	<li>Bin bags</li>
 	<li>Air freshener</li>
@@ -160,22 +163,26 @@
 </ul>
 
 <script>
-$(document).ready(function() {	
+$( document ).ready(function() {	
 	
 	// when a meal type is clicked on...	
-	$('.meal-type a').click(function() {
+	$( '.meal-type a' ).click(function() {
 		
 		// grab the id of the meal
-		var selectedClass = $(this).attr('id');
+		var selectedClass = $( this ).attr( 'id' );
 		
 		// add/remove a class of selected
-		$(this).toggleClass('selected');		
+		$( this ).toggleClass( 'selected' );		
 		
 		//alert(selectedClass);
 		// show the meal type ingredients in the list		
-		$('#items li.' + selectedClass).toggle();
-		$('#items li span.' + selectedClass).toggle();
-	});	
+		$( '#items li.' + selectedClass ).toggle();
+		$( '#items li span.' + selectedClass ).toggle();
+	});
+
+	$( '#items li' ).click(function() {
+		$( this ).toggleClass( 'complete' );
+	});
 });
 </script>
 
