@@ -1,0 +1,147 @@
+[
+	{
+		"name": "Spinach (salad)",
+		"option": false,
+		"recipes": {}
+	}, 
+	{
+		"name": "Salad",
+		"option": true,
+		"recipes": {
+			"name": "salmon-salad"
+		}
+	},
+	{
+		"name": "5 Bananas",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "5 Apples",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Lemons",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Lemons",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "2 x avacados",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "2 x ready to roast mediterranean style vegetables",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "1 x ready to roast mediterranean style vegetables",
+		"option": true,
+		"recipes": {
+			"name": "roasted-sardines"
+		}
+	},
+	{
+		"name": "Celery",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Basil",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Chives",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "2 x bags mixed vegetables",
+		"option": true,
+		"recipes": {
+			"name": "slow-cooked-meat"
+		}
+	},
+	{
+		"name": "Sweet potatoes (breakfast)",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "3 x sweet potatoes",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Kale",
+		"option": false,
+		"recipes": {
+			"name": "roasted-sardines"
+		}
+	},
+	{
+		"name": "Kale",
+		"option": false,
+		"recipes": {
+			"name": "chicken-legs-and-kale"
+		}
+	},
+	{
+		"name": "3 x courgettes",
+		"option": false,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Garlic",
+		"option": false,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "1 x carrot",
+		"option": false,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Courgette",
+		"option": false,
+		"recipes": {
+			"name": "steak"
+		}
+	},
+	{
+		"name": "Mushrooms",
+		"option": false,
+		"recipes": {
+			"name": "steak"
+		}
+	},
+	{
+		"name": "3 x zucchini",
+		"option": false,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	}
+]
