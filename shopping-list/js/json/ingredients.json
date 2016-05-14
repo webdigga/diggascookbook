@@ -1,0 +1,416 @@
+[
+	{
+		"name": "Spinach (salad)",
+		"option": false,
+		"recipes": {}
+	}, 
+	{
+		"name": "Salad",
+		"option": true,
+		"recipes": {
+			"name": "salmon-salad"
+		}
+	},
+	{
+		"name": "5 Bananas",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "5 Apples",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Lemons",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Lemons",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "2 x avacados",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "2 x ready to roast mediterranean style vegetables",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "1 x ready to roast mediterranean style vegetables",
+		"option": true,
+		"recipes": {
+			"name": "roasted-sardines"
+		}
+	},
+	{
+		"name": "Celery",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Basil",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Chives",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "2 x bags mixed vegetables",
+		"option": true,
+		"recipes": {
+			"name": "slow-cooked-meat"
+		}
+	},
+	{
+		"name": "Sweet potatoes (breakfast)",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "3 x sweet potatoes",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Kale",
+		"option": true,
+		"recipes": {
+			"name": "roasted-sardines"
+		}
+	},
+	{
+		"name": "Kale",
+		"option": true,
+		"recipes": {
+			"name": "chicken-legs-and-kale"
+		}
+	},
+	{
+		"name": "3 x courgettes",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Garlic",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "1 x carrot",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "Courgette",
+		"option": true,
+		"recipes": {
+			"name": "steak"
+		}
+	},
+	{
+		"name": "Mushrooms",
+		"option": true,
+		"recipes": {
+			"name": "steak"
+		}
+	},
+	{
+		"name": "3 x zucchini",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "2 x sardines",
+		"option": true,
+		"recipes": {
+			"name": "roasted-sardines"
+		}
+	},
+	{
+		"name": "Fish for noodles",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "Feta cheese",
+		"option": true,
+		"recipes": {
+			"name": "roasted-sardines"
+		}
+	},
+	{
+		"name": "3 x salmon fillets",
+		"option": true,
+		"recipes": {
+			"name": "salmon-salad"
+		}
+	},
+	{
+		"name": "4 x chicken breast",
+		"option": true,
+		"recipes": {
+			"name": "chicken"
+		}
+	},
+	{
+		"name": "Chicken legs",
+		"option": true,
+		"recipes": {
+			"name": "chicken-legs-and-kale"
+		}
+	},
+	{
+		"name": "Beef mince",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "3 x steak",
+		"option": true,
+		"recipes": {
+			"name": "steak"
+		}
+	},
+	{
+		"name": "Meat for the slow cooker",
+		"option": true,
+		"recipes": {
+			"name": "slow-cooked-meat"
+		}
+	},
+	{
+		"name": "Nuts and seeds",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Cornflour",
+		"option": true,
+		"recipes": {
+			"name": "slow-cooked-meat"
+		}
+	},
+	{
+		"name": "Mustard",
+		"option": true,
+		"recipes": {
+			"name": "salmon-salad"
+		}
+	},
+	{
+		"name": "Dijonnaise",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "6 x large eggs",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Stock cubes",
+		"option": true,
+		"recipes": {
+			"name": "slow-cooked-meat"
+		}
+	},
+	{
+		"name": "Passata",
+		"option": true,
+		"recipes": {
+			"name": "zoodle-beef-ragu"
+		}
+	},
+	{
+		"name": "3 x small tins salmon",
+		"option": true,
+		"recipes": {
+			"name": "salad"
+		}
+	},
+	{
+		"name": "Pepper",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Extra virgin olive oil",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Cocoa powder",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Chamomile tea",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Seasoning",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Herbs for the slow cooker",
+		"option": true,
+		"recipes": {
+			"name": "slow-cooked-meat"
+		}
+	},
+	{
+		"name": "Balsamic vinegar",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Small bottle of white wine",
+		"option": true,
+		"recipes": {
+			"name": "garlic-fish-with-zucchini-noodles"
+		}
+	},
+	{
+		"name": "Frozen fruit",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Moshi food",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Cat litter",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "B vitamins",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "D vitamins",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Tin foil",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Bin bags",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Air freshener",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Scourers",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Cloth",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Flash spray",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Fairy liquid",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Clothes washing liquid",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Conditioner",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Toilet roll",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Toilet cleaner",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Deodrant",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Body wash",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Soap",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Mouthwash",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Toothpaste",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Cotton buds",
+		"option": false,
+		"recipes": {}
+	}
+]
