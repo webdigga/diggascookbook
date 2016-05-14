@@ -15,7 +15,11 @@
 	<h1>My new Angular shopping list</h1>
 
 	<ul class="list-group">
-		<li ng-repeat="ingredient in ingredients" class="list-group-item"><span ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary pull-right">{{ recipe }}</span> {{ ingredient.name }}</li>		
+		<li ng-repeat="ingredient in ingredients" class="list-group-item">
+			<span>{{ ingredient.name }}</span>
+			<span ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary">{{ recipe }}</span> 
+			<span class="label label-pill label-default">{{ ingredient.quantity }}</span>			
+		</li>		
 	</ul>
 </div>
 
