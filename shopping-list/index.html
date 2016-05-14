@@ -2,7 +2,7 @@
 <html ng-app="app">
 <head>
 	<title>Shopping list</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
 
 	<!--build:css css/styles.min.css-->
 	<link rel="stylesheet" href="css/app.css">
@@ -15,7 +15,7 @@
 	<h1>My new Angular shopping list</h1>
 
 	<ul class="list-group">
-		<li ng-repeat="ingredient in fruitVeg" class="list-group-item"><span ng-repeat="recipe in ingredient.recipes" class="badge">{{ recipe }}</span> {{ ingredient.name }}</li>		
+		<li ng-repeat="ingredient in ingredients" class="list-group-item"><span ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary pull-right">{{ recipe }}</span> {{ ingredient.name }}</li>		
 	</ul>
 </div>
 
