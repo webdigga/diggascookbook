@@ -16,9 +16,9 @@
 
 	<ul class="list-group">
 		<li ng-repeat="ingredient in ingredients" class="list-group-item">
-			<span>{{ ingredient.name }}</span>
-			<span ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary">{{ recipe }}</span> 
-			<span class="label label-pill label-default">{{ ingredient.quantity }}</span>			
+			<div>{{ ingredient.name }}</div>
+			<div ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary">{{ recipe }}</div> 
+			<div class="label label-pill label-default">{{ ingredient.quantity }}</div>			
 		</li>		
 	</ul>
 </div>
