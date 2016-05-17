@@ -1,21 +1,9 @@
-var shoppingList = angular.module('app', []);
+var shoppingList = angular.module('shoppingList', []);
 
-shoppingList.controller('ShoppingListController', [
-	'$scope',
-	'$http',
-	function($scope, $http) {
+shoppingList.controller('ShoppingListController', ['$scope', '$http', 'dataAPI', function( $scope, $http, dataAPI ) {
 		
-		$http.get('js/json/ingredients.json').then(function( ingredients ) {
-			$scope.ingredients = ingredients.data;		
+	console.log(dataAPI.getIngredients());
+	$scope.ingredients = dataAPI.getIngredients();
 
-			// TODO - get the map working as per,
-			// https://github.com/shanly-suepaul/angular-flight-site/blob/master/src/services/dataAPI.js
-		});
-
-
-
-
-
-
-	}
-]);
+	
+}]);
