@@ -13,14 +13,12 @@
 
 <div ng-controller="ShoppingListController">
 
-{{ ingredients }}
-
 	<h1>My new Angular shopping list</h1>
 
 	<ul class="list-group">
-		<li ng-repeat="ingredient in ingredients" class="list-group-item">
+		<li ng-repeat="ingredient in ingredientsList" class="list-group-item">
 			<div>{{ ingredient.name }}</div>
-			<div ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary">{{ recipe }}</div> 
+			<div class="label label-pill label-primary">{{ ingredient.recipes }}</div> 
 			<div class="label label-pill label-default">{{ ingredient.quantity }}</div>			
 		</li>		
 	</ul>

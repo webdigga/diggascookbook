@@ -10,7 +10,8 @@
 		"quantity": "1 bag",
 		"option": true,
 		"recipes": {
-			"name": "salmon-salad"
+			"name": "salmon-salad",
+			"name": "test"
 		}
 	},
 	{
