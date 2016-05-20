@@ -10,26 +10,28 @@
 </head>
 <body>
 
+	<div ng-controller="ShoppingListController">
+		<h1>My new Angular shopping list</h1>
+		<ul class="list-group">
+			<li ng-repeat="ingredient in ingredientsList" class="list-group-item">
 
-<div ng-controller="ShoppingListController">
 
-	<h1>My new Angular shopping list</h1>
 
-	<ul class="list-group">
-		<li ng-repeat="ingredient in ingredientsList" class="list-group-item">
-			<div>{{ ingredient.name }}</div>
-			<div class="label label-pill label-primary">{{ ingredient.recipes }}</div> 
-			<div class="label label-pill label-default">{{ ingredient.quantity }}</div>			
-		</li>		
-	</ul>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
 
-<!--build:js js/main.min.js -->
-<script src="/app.js"></script>
-<script src="/services/dataAPI.js"></script>
-<!-- endbuild -->
+				<div>{{ ingredient.name }}</div>
+				<div ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary">{{ recipe.name }}</div> 
+				<div class="label label-pill label-default">{{ ingredient.quantity }}</div>			
+			</li>		
+		</ul>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+
+	<!--build:js js/main.min.js -->
+	<script src="/app.js"></script>
+	<script src="/services/dataAPI.js"></script>
+	<!-- endbuild -->
 
 </body>
 </html>

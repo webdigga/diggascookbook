@@ -9,10 +9,14 @@
 		"name": "Salad",
 		"quantity": "1 bag",
 		"option": true,
-		"recipes": {
-			"name": "salmon-salad",
-			"name": "test"
-		}
+		"recipes": [
+			{
+				"name": "salmon-salad"
+			},
+			{
+				"name": "test"
+			}			
+		]
 	},
 	{
 		"name": "Bananas",
@@ -36,9 +40,11 @@
 		"name": "Lemons",
 		"quantity": "1",
 		"option": true,
-		"recipes": {
-			"name": "garlic-fish-with-zucchini-noodles"
-		}
+		"recipes": [
+			{
+				"name": "garlic-fish-with-zucchini-noodles"
+			}
+		]
 	},
 	{
 		"name": "Avacados",
@@ -56,9 +62,11 @@
 		"name": "Ready to roast mediterranean style vegetables",
 		"quantity": "1 tray",
 		"option": true,
-		"recipes": {
-			"name": "roasted-sardines"
-		}
+		"recipes": [
+			{
+				"name": "roasted-sardines"
+			}
+		]
 	},
 	{
 		"name": "Celery",
@@ -70,25 +78,31 @@
 		"name": "Basil",
 		"quantity": "1 bag",
 		"option": true,
-		"recipes": {
-			"name": "zoodle-beef-ragu"
-		}
+		"recipes": [
+			{
+				"name": "zoodle-beef-ragu"
+			}
+		]
 	},
 	{
 		"name": "Chives",
 		"quantity": "1 bag",
 		"option": true,
-		"recipes": {
-			"name": "garlic-fish-with-zucchini-noodles"
-		}
+		"recipes": [
+			{
+				"name": "garlic-fish-with-zucchini-noodles"
+			}
+		]
 	},
 	{
 		"name": "Mixed vegetables",
 		"quantity": "2 bags",
 		"option": true,
-		"recipes": {
-			"name": "slow-cooked-meat"
-		}
+		"recipes": [
+			{
+				"name": "slow-cooked-meat"
+			}
+		]
 	},
 	{
 		"name": "Sweet potatoes",
@@ -100,144 +114,180 @@
 		"name": "Sweet potatoes",
 		"quantity": "3",
 		"option": true,
-		"recipes": {
-			"name": "zoodle-beef-ragu"
-		}
+		"recipes": [
+			{
+				"name": "zoodle-beef-ragu"
+			}
+		]
 	},
 	{
 		"name": "Kale",
 		"quantity": "1 bag",
 		"option": true,
-		"recipes": {
-			"name": "roasted-sardines"
-		}
+		"recipes": [
+			{
+				"name": "roasted-sardines"
+			}
+		]
 	},
 	{
 		"name": "Kale",
 		"quantity": "1 bag",
 		"option": true,
-		"recipes": {
-			"name": "chicken-legs-and-kale"
-		}
+		"recipes": [
+			{
+				"name": "chicken-legs-and-kale"
+			}
+		]
 	},
 	{
 		"name": "Courgettes",
 		"quantity": "3",
 		"option": true,
-		"recipes": {
-			"name": "zoodle-beef-ragu"
-		}
+		"recipes": [
+			{
+				"name": "zoodle-beef-ragu"
+			}
+		]
 	},
 	{
 		"name": "Garlic",
 		"quantity": "1",
 		"option": true,
-		"recipes": {
-			"name": "garlic-fish-with-zucchini-noodles"
-		}
+		"recipes": [
+			{
+				"name": "garlic-fish-with-zucchini-noodles"
+			}
+		]
 	},
 	{
 		"name": "Carrot",
 		"quantity": "1",
 		"option": true,
-		"recipes": {
-			"name": "zoodle-beef-ragu"
-		}
+		"recipes": [
+			{
+				"name": "zoodle-beef-ragu"
+			}
+		]
 	},
 	{
 		"name": "Courgette",
 		"quantity": "3",
 		"option": true,
-		"recipes": {
-			"name": "steak"
-		}
+		"recipes": [
+			{
+				"name": "steak"
+			}
+		]
 	},
 	{
 		"name": "Mushrooms",
 		"quantity": "1 pack",
 		"option": true,
-		"recipes": {
-			"name": "steak"
-		}
+		"recipes": [
+			{
+				"name": "steak"
+			}
+		]
 	},
 	{
 		"name": "Zucchini",
 		"quantity": "3 bags",
 		"option": true,
-		"recipes": {
-			"name": "garlic-fish-with-zucchini-noodles"
-		}
+		"recipes": [
+			{
+				"name": "garlic-fish-with-zucchini-noodles"
+			}
+		]
 	},
 	{
 		"name": "Sardines",
 		"quantity": "2 packs",
 		"option": true,
-		"recipes": {
-			"name": "roasted-sardines"
-		}
+		"recipes": [
+			{
+				"name": "roasted-sardines"
+			}
+		]
 	},
 	{
 		"name": "Fish for noodles",
 		"quantity": "2",
 		"option": true,
-		"recipes": {
-			"name": "garlic-fish-with-zucchini-noodles"
-		}
+		"recipes": [
+			{
+				"name": "garlic-fish-with-zucchini-noodles"
+			}
+		]
 	},
 	{
 		"name": "Feta cheese",
 		"quantity": "200g",
 		"option": true,
-		"recipes": {
-			"name": "roasted-sardines"
-		}
+		"recipes": [
+			{
+				"name": "roasted-sardines"
+			}
+		]
 	},
 	{
 		"name": "Salmon fillets",
 		"quantity": "3",
 		"option": true,
-		"recipes": {
-			"name": "salmon-salad"
-		}
+		"recipes": [
+			{
+				"name": "salmon-salad"
+			}
+		]
 	},
 	{
 		"name": "Chicken breast",
 		"quantity": "4",
 		"option": true,
-		"recipes": {
-			"name": "chicken"
-		}
+		"recipes": [
+			{
+				"name": "chicken"
+			}
+		]
 	},
 	{
 		"name": "Chicken legs",
 		"quantity": "3",
 		"option": true,
-		"recipes": {
-			"name": "chicken-legs-and-kale"
-		}
+		"recipes": [
+			{
+				"name": "chicken-legs-and-kale"
+			}
+		]
 	},
 	{
 		"name": "Beef mince",
 		"quantity": "500g",
 		"option": true,
-		"recipes": {
-			"name": "zoodle-beef-ragu"
-		}
+		"recipes": [
+			{
+				"name": "zoodle-beef-ragu"
+			}
+		]
 	},
 	{
 		"name": "Steak",
 		"quantity": "3",
 		"option": true,
-		"recipes": {
-			"name": "steak"
-		}
+		"recipes": [
+			{
+				"name": "steak"
+			}
+		]
 	},
 	{
 		"name": "Meat for the slow cooker",
 		"option": true,
-		"recipes": {
-			"name": "slow-cooked-meat"
-		}
+		"recipes": [
+			{
+				"name": "slow-cooked-meat"
+			}
+		]
 	},
 	{
 		"name": "Nuts and seeds",
@@ -248,25 +298,31 @@
 	{
 		"name": "Cornflour",
 		"option": true,
-		"recipes": {
-			"name": "slow-cooked-meat"
-		}
+		"recipes": [
+			{
+				"name": "slow-cooked-meat"
+			}
+		]
 	},
 	{
 		"name": "Mustard",
 		"quantity": "1 jar",
 		"option": true,
-		"recipes": {
-			"name": "salmon-salad"
-		}
+		"recipes": [
+			{
+				"name": "salmon-salad"
+			}
+		]
 	},
 	{
 		"name": "Dijonnaise",
 		"quantity": "1 jar",
 		"option": true,
-		"recipes": {
-			"name": "garlic-fish-with-zucchini-noodles"
-		}
+		"recipes": [
+			{
+				"name": "garlic-fish-with-zucchini-noodles"
+			}
+		]
 	},
 	{
 		"name": "Large eggs",
@@ -277,25 +333,31 @@
 	{
 		"name": "Stock cubes",
 		"option": true,
-		"recipes": {
-			"name": "slow-cooked-meat"
-		}
+		"recipes": [
+			{
+				"name": "slow-cooked-meat"
+			}
+		]
 	},
 	{
 		"name": "Passata",
 		"quantity": "700g",
 		"option": true,
-		"recipes": {
-			"name": "zoodle-beef-ragu"
-		}
+		"recipes": [
+			{
+				"name": "zoodle-beef-ragu"
+			}
+		]
 	},
 	{
 		"name": "Tinned salmon",
 		"quantity": "3",
 		"option": true,
-		"recipes": {
-			"name": "salad"
-		}
+		"recipes": [
+			{
+				"name": "salad"
+			}
+		]
 	},
 	{
 		"name": "Pepper",
@@ -325,9 +387,11 @@
 	{
 		"name": "Herbs for the slow cooker",
 		"option": true,
-		"recipes": {
-			"name": "slow-cooked-meat"
-		}
+		"recipes": [
+			{
+				"name": "slow-cooked-meat"
+			}
+		]
 	},
 	{
 		"name": "Balsamic vinegar",
@@ -338,9 +402,11 @@
 		"name": "White wine",
 		"quantity": "1 small bottle",
 		"option": true,
-		"recipes": {
-			"name": "garlic-fish-with-zucchini-noodles"
-		}
+		"recipes": [
+			{
+				"name": "garlic-fish-with-zucchini-noodles"
+			}
+		]
 	},
 	{
 		"name": "Frozen fruit",
