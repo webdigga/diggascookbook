@@ -1,0 +1,26 @@
+// bootstrap overrides
+.list-group-item {
+	padding: 0;
+}
+
+// Custom app styles
+.shopping-list {
+
+}
+.shopping-list__link {
+	color: black;
+	display: block;
+	padding: 1em;	
+	&:hover,
+	&:active {		
+		text-decoration: none;
+	}
+}
+.shopping-list__link--selected {
+	background: brown;
+	color: #ffffff;
+	&:hover,
+	&:active {		
+		color: #ffffff;
+	}
+}

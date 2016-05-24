@@ -1,0 +1,15 @@
+.list-group-item {
+  padding: 0; }
+
+.shopping-list__link {
+  color: black;
+  display: block;
+  padding: 1em; }
+  .shopping-list__link:hover, .shopping-list__link:active {
+    text-decoration: none; }
+
+.shopping-list__link--selected {
+  background: brown;
+  color: #ffffff; }
+  .shopping-list__link--selected:hover, .shopping-list__link--selected:active {
+    color: #ffffff; }
