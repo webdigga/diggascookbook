@@ -1,21 +1,22 @@
 // Includes
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
-var cssnano = require('gulp-cssnano');
-var del = require('del');
-var runSequence = require('run-sequence');
+var gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	browserSync = require('browser-sync').create(),
+	useref = require('gulp-useref'),
+	uglify = require('gulp-uglify'),
+	gulpIf = require('gulp-if'),
+	cssnano = require('gulp-cssnano'),
+	del = require('del'),
+	runSequence = require('run-sequence'),
+	karma = require('karma');
 
 // BROWSER SYNC
 // Start browserSync (live reload) server
 gulp.task('browserSync', function() {
   browserSync.init({
-    server: {
-      baseDir: ''
-    },
+	server: {
+	  baseDir: ''
+	},
   })
 })
 
@@ -23,11 +24,11 @@ gulp.task('browserSync', function() {
 // Compile the Sass into CSS and add into app folder
 gulp.task('sass', function() {
   return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in app/scss
-    .pipe(sass())
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
+	.pipe(sass())
+	.pipe(gulp.dest('css'))
+	.pipe(browserSync.reload({
+	  stream: true
+	}))
 });
 
 // WATCH
@@ -42,10 +43,10 @@ gulp.task('watch', ['browserSync', 'sass'], function () {
 // Concatenate(useref) and minify(uglify/cssnano) JS and CSS
 gulp.task('useref', function(){
   return gulp.src('*.html')
-    .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))    
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
+	.pipe(useref())
+	.pipe(gulpIf('*.js', uglify()))    
+	.pipe(gulpIf('*.css', cssnano()))
+	.pipe(gulp.dest('dist'))
 });
 
 // CLEAN
@@ -58,8 +59,8 @@ gulp.task('clean:dist', function() {
 // Run clean:dist first, then sass, useref, images and fonts concurrently
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    ['sass', 'useref'],
-    callback
+	['sass', 'useref'],
+	callback
   )
 });
 
@@ -67,6 +68,42 @@ gulp.task('build', function (callback) {
 // Run sass, browser sync and watch concurrently
 gulp.task('dev', function (callback) {
   runSequence(['sass','browserSync', 'watch'],
-    callback
+	callback
   )
+});
+
+// TEST
+// Run the karma tests
+gulp.task('test', function ( cb ) {	
+	karma.server.start({
+		files: [				
+			'test/main.js',
+						
+			{ 
+				pattern: 'test/**/*Test.js',
+				included: false
+			}
+		],
+
+		frameworks: [ 'requirejs', 'mocha', 'sinon-chai' ],
+
+		preprocessors: {
+			'src/**/*.js': [ 'coverage' ]
+		},
+
+		reporters: [ 'dots', 'coverage' ],
+		coverageReporter: {
+			type: 'text'
+		},
+
+		logLevel: 'INFO',
+
+		browsers: [ 'PhantomJS' ],
+		captureTimeout: 5000,
+
+		singleRun: true
+	});
+
+	cb();
+	
 });
