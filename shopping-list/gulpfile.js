@@ -7,8 +7,7 @@ var gulp = require('gulp'),
 	gulpIf = require('gulp-if'),
 	cssnano = require('gulp-cssnano'),
 	del = require('del'),
-	runSequence = require('run-sequence'),
-	karma = require('karma');
+	runSequence = require('run-sequence')
 
 // BROWSER SYNC
 // Start browserSync (live reload) server
@@ -70,40 +69,4 @@ gulp.task('dev', function (callback) {
   runSequence(['sass','browserSync', 'watch'],
 	callback
   )
-});
-
-// TEST
-// Run the karma tests
-gulp.task('test', function ( cb ) {	
-	karma.server.start({
-		files: [				
-			'test/main.js',
-						
-			{ 
-				pattern: 'test/**/*Test.js',
-				included: false
-			}
-		],
-
-		frameworks: [ 'requirejs', 'mocha', 'sinon-chai' ],
-
-		preprocessors: {
-			'src/**/*.js': [ 'coverage' ]
-		},
-
-		reporters: [ 'dots', 'coverage' ],
-		coverageReporter: {
-			type: 'text'
-		},
-
-		logLevel: 'INFO',
-
-		browsers: [ 'PhantomJS' ],
-		captureTimeout: 5000,
-
-		singleRun: true
-	});
-
-	cb();
-	
 });
