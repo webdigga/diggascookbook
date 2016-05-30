@@ -12,6 +12,24 @@
 
 	<div ng-controller="ShoppingListController" class="shopping-list">
 		<h1>My new Angular shopping list</h1>
+
+		<h2>Dinner</h2>
+		<ul>
+			<li><a href="" ng-click="" id="salmon-salad">Salmon salad</a></li>
+			<li><a href="" ng-click="" id="steak">Steak, courgettes and mushrooms</a></li>
+			<li><a href="" ng-click="" id="zoodle-beef-ragu">Zoodle beef ragu</a></li>
+			<li><a href="" ng-click="" id="slow-cooked-meat">Slow cooked meat with vegetables</a></li>
+			<li><a href="" ng-click="" id="roasted-sardines">Roasted sardines with vegetables</a></li>
+			<li><a href="" ng-click="" id="garlic-fish-with-zucchini-noodles">Garlic fish with zucchini noodles</a></li>
+			<li><a href="" ng-click="" id="chicken-legs-and-kale">Chicken legs and kale</a></li>
+		</ul>
+
+		<h2>Lunch</h2>
+		<ul>
+			<li><a href="" ng-click="" id="salmon">Salmon</a></li>
+			<li><a href="" ng-click="" id="chicken">Chicken</a></li>
+		</ul>
+
 		<ul class="list-group">
 			<li ng-repeat="ingredient in ingredientsList" class="list-group-item">
 				<a href="" class="shopping-list__link" ng-click="selected = !selected" ng-class="selected ? 'shopping-list__link--selected' : 'shopping-list__link--not-selected'">
