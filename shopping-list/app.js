@@ -10,17 +10,5 @@ shoppingList.controller('ShoppingListController', ['$scope', '$http', 'dataAPI',
 
 		// Now assign all the ingredients into our empty array
 		$scope.ingredientsList = ingredientsList;
-	})
-
-	/*
-	$scope.itemClicked =  function(item) {
-		console.log(item);
-		$scope.selected = item; 
-	}	
-
-	$scope.isActive = function(item) {
-		console.log(item);
-	    return $scope.selected === item;
-	};
-	*/
+	})	
 }]);
