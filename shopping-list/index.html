@@ -5,13 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
 
 	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/app.css">
 	<!--endbuild-->
 </head>
 <body>
 
 	<div ng-controller="ShoppingListController" class="shopping-list">
-		<h1>My new Angular shopping list</h1>
+		<h1>Shopping list</h1>
 
 		<h2>Dinner</h2>
 		<ul>
@@ -31,8 +31,14 @@
 		</ul>
 
 		<ul class="list-group">
-			<li ng-repeat="ingredient in ingredientsList" ng-class="{ 'shopping-list__option' : ingredient.option === true }" class="list-group-item">
-				<a href="" class="shopping-list__link" ng-click="selected = !selected" ng-class="selected ? 'shopping-list__link--selected' : 'shopping-list__link--not-selected'">
+			<li ng-repeat="ingredient in ingredientsList" 
+				ng-class="{ 'shopping-list__option' : ingredient.option === true }" 
+				class="list-group-item"
+				ng-hide="ingredient.option === true">
+				<a 	href="" 
+					class="shopping-list__link"
+					ng-click="selected = !selected"
+					ng-class="selected ? 'shopping-list__link--selected' : 'shopping-list__link--not-selected'">
 					<div>{{ ingredient.name }}</div>
 					<div ng-repeat="recipe in ingredient.recipes" class="label label-pill label-primary">{{ recipe.name }}</div> 
 					<div class="label label-pill label-default">{{ ingredient.quantity }}</div>
@@ -44,8 +50,8 @@
 	<script src="bower_components/angular/angular.min.js"></script>
 
 	<!--build:js js/main.min.js -->
-	<script src="/app.js"></script>
-	<script src="/services/dataAPI.js"></script>
+		<script src="/app.js"></script>
+		<script src="/services/dataAPI.js"></script>
 	<!-- endbuild -->
 
 </body>
