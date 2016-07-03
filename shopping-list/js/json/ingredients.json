@@ -290,6 +290,25 @@
 		]
 	},
 	{
+		"name": "Quorn for soups",
+		"option": true,
+		"recipes": [
+			{
+				"name": "soup"
+			}
+		]
+	},
+	{
+		"name": "Soups",
+		"quantity": "3",
+		"option": true,
+		"recipes": [
+			{
+				"name": "slow-cooked-meat"
+			}
+		]
+	},
+	{
 		"name": "Nuts and seeds",
 		"quantity": "1 bag",
 		"option": false,
@@ -313,6 +332,18 @@
 				"name": "salmon-salad"
 			}
 		]
+	},
+	{
+		"name": "Beans",
+		"quantity": "1 tin",
+		"option": false,
+		"recipes": {}
+	},
+	{
+		"name": "Wholegrain rice/pasta",
+		"quantity": "1 bag",
+		"option": false,
+		"recipes": {}
 	},
 	{
 		"name": "Dijonnaise",
