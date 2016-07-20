@@ -63,6 +63,7 @@
 		<a href="#" id="garlic-fish-with-zucchini-noodles">Garlic fish with zucchini noodles</a>
 		<a href="#" id="chicken-legs-and-kale">Chicken legs and kale</a>
 		<a href="#" id="frittata">Frittata</a>
+		<a href="#" id="pollock-en-papillote">Pollock en papillote</a>
 
 		<h2>LUNCH</h2>		
 		<a href="#" id="chicken">Chicken</a>
@@ -70,7 +71,6 @@
 </div>
 
 <ul id="items">
-
 	<h2>FRUIT / VEG</h2>
 	<li>Spinach (salad)</li>
 	<li class="option salmon-salad">Salad</li>
@@ -78,6 +78,7 @@
 	<li>5 Bananas</li>
 	<li>5 Apples</li>
 	<li class="option garlic-fish-with-zucchini-noodles">1 x lemons</li>
+	<li class="option pollock-en-papillote">3 x lemons</li>
 	<li>2 x avacados</li>
 	<li>2 x ready to roast mediterranean style vegetables</li>
 	<li class="option roasted-sardines">1 x ready to roast mediterranean style vegetables</li>
@@ -85,8 +86,11 @@
 	<li>Celery</li>
 	<li class="option zoodle-beef-ragu">Basil</li>
 	<li class="option garlic-fish-with-zucchini-noodles">Chives</li>
+	<li class="option pollock-en-papillote">Chives</li>
+	<li class="option pollock-en-papillote">Leeks</li>
 	<li class="option slow-cooked-meat">2 x bags mixed vegetables</li>
 	<li>Sweet potatoes (breakfast)</li>
+	<li class="option pollock-en-papillote">3 x sweet potatoes</li>
 	<li class="option roasted-sardines">Kale</li>
 	<li class="option chicken-legs-and-kale">Kale</li>	
 	<li class="option garlic-fish-with-zucchini-noodles">Garlic</li>
@@ -115,6 +119,7 @@
 	<li class="option slow-cooked-meat">Cornflour</li>
 	<li class="option salmon-salad">Mustard</li>
 	<li class="option garlic-fish-with-zucchini-noodles">Dijonnaise</li>
+	<li class="option zoodle-beef-ragu">Olives</li>
 	<li>Beans</li>
 
 	<li>6 x eggs</li>
@@ -131,6 +136,8 @@
 	<li class="option garlic-fish-with-zucchini-noodles">Small bottle of white wine</li>
 
 	<h2>FROZEN</h2>
+	<li class="option pollock-en-papillote">Frozen peas</li>
+	<li class="option pollock-en-papillote">Frozen pollack</li>
 	<li>Frozen fruit</li>
 
 	<h2>PET</h2>
@@ -141,6 +148,7 @@
 	<li>B vitamins</li>
 	<li>Vitamin d</li>
 	<li>Tin foil</li>
+	<li class="option pollock-en-papillote">Baking parchment paper</li>
 	<li>Bin bags</li>
 	<li>Air freshener</li>
 	<li>Scourers</li>
@@ -162,27 +170,27 @@
 </ul>
 
 <script>
-$( document ).ready(function() {
+	$( document ).ready(function() {
 
-	// when a meal type is clicked on...
-	$( '.meal-type a' ).click(function() {
+		// when a meal type is clicked on...
+		$( '.meal-type a' ).click(function() {
 
-		// grab the id of the meal
-		var selectedClass = $( this ).attr( 'id' );
+			// grab the id of the meal
+			var selectedClass = $( this ).attr( 'id' );
 
-		// add/remove a class of selected
-		$( this ).toggleClass( 'selected' );
+			// add/remove a class of selected
+			$( this ).toggleClass( 'selected' );
 
-		//alert(selectedClass);
-		// show the meal type ingredients in the list
-		$( '#items li.' + selectedClass ).toggle();
-		$( '#items li span.' + selectedClass ).toggle();
+			//alert(selectedClass);
+			// show the meal type ingredients in the list
+			$( '#items li.' + selectedClass ).toggle();
+			$( '#items li span.' + selectedClass ).toggle();
+		});
+
+		$( '#items li' ).click(function() {
+			$( this ).toggleClass( 'complete' );
+		});
 	});
-
-	$( '#items li' ).click(function() {
-		$( this ).toggleClass( 'complete' );
-	});
-});
 </script>
 
 </body>
